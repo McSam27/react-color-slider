@@ -7,7 +7,7 @@ export default class Slider extends Component {
   }
 
   handleChange(e) {
-    this.props.onChange(this.props.type,e.target.value);
+    this.props.onChange(this.props.type, e.target.value);
   }
 
   render() {
