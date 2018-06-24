@@ -33,6 +33,11 @@
   border: 1px solid #fff;
 }
 
+.slider-input {
+  background-color: #efefef;
+  color: #151618;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

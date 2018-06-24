@@ -12,10 +12,11 @@ export default class Slider extends Component {
 
   render() {
     return(
-      <input 
-        htmlFor="val" 
-        type="range" 
-        onChange={this.handleChange} 
+      <input
+        className="slider"
+        htmlFor="val"
+        type="range"
+        onChange={this.handleChange}
         defaultValue={this.props.val}
         min="0"
         max="255"/>

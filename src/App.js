@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Slider from './components/Slider';
 import './App.css';
 
@@ -32,26 +31,25 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h2>RGB Slider in React</h2>
           <div className="row">
-          <div className="col-3">
+          <div className="col-3 slider-input">
             <span>R: {this.state.r}</span>
             <br/>
             <Slider type="r" val={this.state.r} onChange={this.changeValue}/>
           </div>
-          <div className="col-3">
+          <div className="col-3 slider-input">
             <span>G: {this.state.g}</span>
             <br/>
             <Slider type="g" val={this.state.g} onChange={this.changeValue}/>
           </div>
-          <div className="col-3">
+          <div className="col-3 slider-input">
             <span>B: {this.state.b}</span>
             <br/>
             <Slider type="b" val={this.state.b} onChange={this.changeValue}/>
           </div>
           </div>
-          
+
         </div>
         <div className="container" style={styles} >
 
